@@ -3,24 +3,17 @@ import json
 import os
 import time
 from engine.runner import BenchmarkRunner
+from engine.llm_judge import LLMJudge
 from agent.main_agent import MainAgent
 
 # Giả lập các components Expert
 class ExpertEvaluator:
-    async def score(self, case, resp): 
+    async def score(self, case, resp):
         # Giả lập tính toán Hit Rate và MRR
         return {
-            "faithfulness": 0.9, 
+            "faithfulness": 0.9,
             "relevancy": 0.8,
             "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
-        }
-
-class MultiModelJudge:
-    async def evaluate_multi_judge(self, q, a, gt): 
-        return {
-            "final_score": 4.5, 
-            "agreement_rate": 0.8,
-            "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
         }
 
 async def run_benchmark_with_results(agent_version: str):
@@ -37,17 +30,23 @@ async def run_benchmark_with_results(agent_version: str):
         print("❌ File data/golden_set.jsonl rỗng. Hãy tạo ít nhất 1 test case.")
         return None, None
 
-    runner = BenchmarkRunner(MainAgent(), ExpertEvaluator(), MultiModelJudge())
+    judge = LLMJudge()
+    print(f"   ⚖️  Multi-Judge mode: {judge.mode} ({len(judge.judges)} judges)")
+    runner = BenchmarkRunner(MainAgent(), ExpertEvaluator(), judge)
     results = await runner.run_all(dataset)
 
     total = len(results)
+    cost_report = judge.get_cost_report()
     summary = {
         "metadata": {"version": agent_version, "total": total, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")},
         "metrics": {
             "avg_score": sum(r["judge"]["final_score"] for r in results) / total,
             "hit_rate": sum(r["ragas"]["retrieval"]["hit_rate"] for r in results) / total,
-            "agreement_rate": sum(r["judge"]["agreement_rate"] for r in results) / total
-        }
+            "agreement_rate": sum(r["judge"]["agreement_rate"] for r in results) / total,
+            "conflict_rate": sum(1 for r in results if r["judge"].get("needs_review")) / total,
+            "avg_eval_cost_usd": cost_report["avg_cost_per_eval_usd"],
+        },
+        "cost": cost_report,
     }
     return results, summary
 
