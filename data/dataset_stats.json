@@ -1,0 +1,23 @@
+{
+  "total": 55,
+  "by_difficulty": {
+    "easy": 15,
+    "medium": 15,
+    "hard": 15,
+    "adversarial": 10
+  },
+  "by_type": {
+    "fact-check": 14,
+    "procedural": 8,
+    "multi-hop": 12,
+    "calculation": 5,
+    "comparison": 2,
+    "edge-case": 3,
+    "analysis": 1,
+    "red-teaming": 8,
+    "out-of-scope": 2
+  },
+  "with_ground_truth": 52,
+  "without_ground_truth": 3,
+  "avg_expected_answer_length": 179
+}

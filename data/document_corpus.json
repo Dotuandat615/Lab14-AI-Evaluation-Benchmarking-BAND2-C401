@@ -1,0 +1,19 @@
+{
+  "doc_policy_001": "Chính sách đổi mật khẩu: Mật khẩu phải được thay đổi ít nhất mỗi 90 ngày. Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt. Không được dùng lại 5 mật khẩu gần nhất.",
+  "doc_policy_002": "Chính sách nghỉ phép: Nhân viên được hưởng 12 ngày nghỉ phép có lương mỗi năm. Nghỉ phép cần được đăng ký trước ít nhất 3 ngày làm việc. Nghỉ phép tích lũy tối đa 24 ngày qua các năm.",
+  "doc_policy_003": "Chính sách làm việc từ xa (WFH): Nhân viên có thể làm việc từ xa tối đa 2 ngày/tuần sau khi được quản lý phê duyệt. Phải đảm bảo kết nối VPN và tham gia đầy đủ các cuộc họp trực tuyến.",
+  "doc_policy_004": "Quy trình onboarding nhân viên mới: Tuần đầu tiên bao gồm đào tạo an ninh thông tin bắt buộc, cài đặt thiết bị, và gặp gỡ các phòng ban liên quan. Hoàn thành checklist onboarding trong vòng 30 ngày.",
+  "doc_policy_005": "Chính sách chi phí công tác: Nhân viên được hoàn ứng tối đa 500.000 VNĐ/ngày cho ăn uống khi công tác trong nước. Vé máy bay hạng phổ thông được thanh toán cho chuyến bay dưới 4 giờ.",
+  "doc_tech_001": "Hướng dẫn reset mật khẩu: Truy cập portal.company.com → Nhấn 'Quên mật khẩu' → Nhập email công ty → Kiểm tra email OTP (hết hạn sau 10 phút) → Tạo mật khẩu mới theo chính sách. Nếu không nhận được email, liên hệ IT Helpdesk qua ext 1234.",
+  "doc_tech_002": "Hướng dẫn kết nối VPN: Tải Cisco AnyConnect tại it-portal.company.com/vpn. Cấu hình: Server = vpn.company.com, Username = email công ty, Password = mật khẩu hiện tại. VPN bắt buộc khi truy cập hệ thống từ bên ngoài văn phòng.",
+  "doc_tech_003": "Cài đặt phần mềm và ứng dụng: Chỉ được cài đặt phần mềm từ danh sách phê duyệt tại app-catalog.company.com. Cài đặt phần mềm ngoài danh sách phải có phê duyệt bằng văn bản từ IT Manager và CISO.",
+  "doc_tech_004": "Chính sách backup dữ liệu: Dữ liệu công việc phải được lưu trên OneDrive hoặc SharePoint, không được lưu trên máy tính cá nhân. IT thực hiện backup tự động lúc 2:00 AM hằng ngày. Thời gian lưu trữ backup là 90 ngày.",
+  "doc_tech_005": "Hướng dẫn báo cáo sự cố bảo mật: Nếu phát hiện sự cố bảo mật (email lừa đảo, malware, truy cập trái phép), báo cáo ngay tới security@company.com hoặc gọi đường dây nóng bảo mật 24/7: ext 9999.",
+  "doc_hr_001": "Quy trình đánh giá hiệu suất: Đánh giá hiệu suất được thực hiện 2 lần/năm vào tháng 6 và tháng 12. Nhân viên tự đánh giá trước, sau đó quản lý trực tiếp đánh giá và thảo luận. Kết quả được sử dụng để xem xét tăng lương và thăng tiến.",
+  "doc_hr_002": "Chính sách phúc lợi sức khỏe: Công ty chi trả 80% phí bảo hiểm y tế cho nhân viên và 50% cho người thân trực tiếp (vợ/chồng, con dưới 18 tuổi). Bảo hiểm áp dụng từ ngày đầu tiên làm việc.",
+  "doc_hr_003": "Chương trình đào tạo và phát triển: Mỗi nhân viên được cấp ngân sách 5.000.000 VNĐ/năm cho đào tạo. Khóa học phải được phê duyệt bởi quản lý trực tiếp. Nhân viên phải chia sẻ kiến thức học được cho đồng nghiệp trong vòng 1 tháng sau khi hoàn thành.",
+  "doc_hr_004": "Chính sách làm thêm giờ: Làm thêm giờ phải được quản lý phê duyệt trước. Tăng ca ngày thường được tính 150% lương, ngày nghỉ cuối tuần 200%, ngày lễ 300%. Tối đa 40 giờ làm thêm mỗi tháng.",
+  "doc_hr_005": "Quy trình nghỉ việc: Nhân viên phải thông báo trước ít nhất 30 ngày (cấp quản lý: 45 ngày). Phải bàn giao toàn bộ công việc, thiết bị và dữ liệu. Thanh toán lương tháng cuối và phép tồn đọng trong vòng 7 ngày làm việc sau ngày nghỉ việc.",
+  "doc_finance_001": "Quy trình thanh toán hóa đơn: Hóa đơn cần được nộp kèm chứng từ gốc cho phòng kế toán trước ngày 25 hàng tháng. Thanh toán được xử lý vào ngày 5 tháng sau. Hóa đơn trễ hạn sẽ được xử lý vào kỳ thanh toán kế tiếp.",
+  "doc_finance_002": "Chính sách tạm ứng: Nhân viên có thể tạm ứng tối đa 2 tháng lương một lần, tối đa 2 lần/năm. Tạm ứng phải được hoàn trả trong vòng 3 tháng. Phải có phê duyệt từ quản lý trực tiếp và phòng HR."
+}
