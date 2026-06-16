@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "version": "Agent_V1_Legacy",
+    "total": 55,
+    "timestamp": "2026-06-16 21:58:38",
+    "judge_mode": "mock",
+    "judge_models": [
+      "claude-opus-4-8",
+      "gpt-4o"
+    ]
+  },
+  "metrics": {
+    "avg_score": 2.3182,
+    "hit_rate": 0.9455,
+    "mrr": 0.9288,
+    "agreement_rate": 0.8257,
+    "cohens_kappa": 0.7822,
+    "conflict_rate": 0.3273,
+    "pass_rate": 0.2182,
+    "faithfulness": 0.9,
+    "relevancy": 0.85,
+    "avg_eval_cost_usd": 0.0
+  },
+  "performance": {
+    "total_cases": 55,
+    "total_runtime_seconds": 7.265,
+    "avg_latency_seconds": 1.2075,
+    "p50_latency_seconds": 1.2055,
+    "p95_latency_seconds": 1.2193,
+    "max_latency_seconds": 1.22,
+    "total_tokens": 11405,
+    "avg_tokens_per_case": 207.4,
+    "under_2min_target": true
+  },
+  "cost": {
+    "total_cost_usd": 0.0,
+    "eval_count": 55,
+    "avg_cost_per_eval_usd": 0.0,
+    "mode": "mock"
+  }
+}

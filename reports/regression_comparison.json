@@ -1,0 +1,179 @@
+{
+  "timestamp": "2026-06-16 21:58:41",
+  "v1": {
+    "metadata": {
+      "version": "Agent_V1_Legacy",
+      "total": 55,
+      "timestamp": "2026-06-16 21:58:38",
+      "judge_mode": "mock",
+      "judge_models": [
+        "claude-opus-4-8",
+        "gpt-4o"
+      ]
+    },
+    "metrics": {
+      "avg_score": 2.3182,
+      "hit_rate": 0.9455,
+      "mrr": 0.9288,
+      "agreement_rate": 0.8257,
+      "cohens_kappa": 0.7822,
+      "conflict_rate": 0.3273,
+      "pass_rate": 0.2182,
+      "faithfulness": 0.9,
+      "relevancy": 0.85,
+      "avg_eval_cost_usd": 0.0
+    },
+    "performance": {
+      "total_cases": 55,
+      "total_runtime_seconds": 7.265,
+      "avg_latency_seconds": 1.2075,
+      "p50_latency_seconds": 1.2055,
+      "p95_latency_seconds": 1.2193,
+      "max_latency_seconds": 1.22,
+      "total_tokens": 11405,
+      "avg_tokens_per_case": 207.4,
+      "under_2min_target": true
+    },
+    "cost": {
+      "total_cost_usd": 0.0,
+      "eval_count": 55,
+      "avg_cost_per_eval_usd": 0.0,
+      "mode": "mock"
+    }
+  },
+  "v2": {
+    "metadata": {
+      "version": "Agent_V2_Optimized",
+      "total": 55,
+      "timestamp": "2026-06-16 21:58:41",
+      "judge_mode": "mock",
+      "judge_models": [
+        "claude-opus-4-8",
+        "gpt-4o"
+      ]
+    },
+    "metrics": {
+      "avg_score": 2.4,
+      "hit_rate": 0.9455,
+      "mrr": 0.9288,
+      "agreement_rate": 0.8303,
+      "cohens_kappa": 0.7878,
+      "conflict_rate": 0.2909,
+      "pass_rate": 0.2182,
+      "faithfulness": 0.9,
+      "relevancy": 0.85,
+      "avg_eval_cost_usd": 0.0
+    },
+    "performance": {
+      "total_cases": 55,
+      "total_runtime_seconds": 3.062,
+      "avg_latency_seconds": 0.5064,
+      "p50_latency_seconds": 0.5043,
+      "p95_latency_seconds": 0.5175,
+      "max_latency_seconds": 0.5184,
+      "total_tokens": 5995,
+      "avg_tokens_per_case": 109,
+      "under_2min_target": true
+    },
+    "cost": {
+      "total_cost_usd": 0.0,
+      "eval_count": 55,
+      "avg_cost_per_eval_usd": 0.0,
+      "mode": "mock"
+    },
+    "retrieval_eval": {
+      "hit_rate@1": 0.9038,
+      "hit_rate@3": 0.9423,
+      "hit_rate@5": 0.9615,
+      "mrr": 0.9247,
+      "precision@3": 0.391,
+      "recall@5": 0.8987
+    },
+    "retrieval_by_difficulty": {
+      "adversarial": {
+        "count": 7,
+        "hit_rate@3": 0.7143,
+        "mrr": 0.7143
+      },
+      "hard": {
+        "count": 15,
+        "hit_rate@3": 1.0,
+        "mrr": 0.9556
+      },
+      "easy": {
+        "count": 15,
+        "hit_rate@3": 1.0,
+        "mrr": 1.0
+      },
+      "medium": {
+        "count": 15,
+        "hit_rate@3": 0.9333,
+        "mrr": 0.9167
+      }
+    },
+    "regression": {
+      "v1_version": "Agent_V1_Legacy",
+      "v2_version": "Agent_V2_Optimized",
+      "v1_score": 2.3182,
+      "v2_score": 2.4,
+      "delta_score": 0.0818,
+      "delta_hit_rate": 0.0,
+      "delta_latency_seconds": -0.7011,
+      "delta_cost_usd": 0.0,
+      "delta_tokens": -98.4,
+      "latency_improvement_pct": 58.1,
+      "cost_improvement_pct": 0,
+      "token_reduction_pct": 47.4,
+      "gate_checks": {
+        "avg_score >= 4.0": false,
+        "hit_rate >= 0.80": true,
+        "agreement >= 0.70": true,
+        "cohens_kappa >= 0.60": true,
+        "p95_latency < 1.0s": true,
+        "cost < 0.01 USD/eval": true
+      },
+      "all_checks_pass": false,
+      "decision": "BLOCK RELEASE - Khong dat nguong chat luong",
+      "thresholds": {
+        "avg_score_min": 3.0,
+        "hit_rate_min": 0.8,
+        "agreement_rate_min": 0.7,
+        "cohens_kappa_min": 0.6,
+        "latency_max_seconds": 1.0,
+        "cost_max_usd_per_eval": 0.01
+      }
+    }
+  },
+  "delta": {
+    "v1_version": "Agent_V1_Legacy",
+    "v2_version": "Agent_V2_Optimized",
+    "v1_score": 2.3182,
+    "v2_score": 2.4,
+    "delta_score": 0.0818,
+    "delta_hit_rate": 0.0,
+    "delta_latency_seconds": -0.7011,
+    "delta_cost_usd": 0.0,
+    "delta_tokens": -98.4,
+    "latency_improvement_pct": 58.1,
+    "cost_improvement_pct": 0,
+    "token_reduction_pct": 47.4,
+    "gate_checks": {
+      "avg_score >= 4.0": false,
+      "hit_rate >= 0.80": true,
+      "agreement >= 0.70": true,
+      "cohens_kappa >= 0.60": true,
+      "p95_latency < 1.0s": true,
+      "cost < 0.01 USD/eval": true
+    },
+    "all_checks_pass": false,
+    "decision": "BLOCK RELEASE - Khong dat nguong chat luong",
+    "thresholds": {
+      "avg_score_min": 3.0,
+      "hit_rate_min": 0.8,
+      "agreement_rate_min": 0.7,
+      "cohens_kappa_min": 0.6,
+      "latency_max_seconds": 1.0,
+      "cost_max_usd_per_eval": 0.01
+    }
+  }
+}
